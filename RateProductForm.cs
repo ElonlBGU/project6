@@ -16,5 +16,10 @@ namespace Project6
         {
             InitializeComponent();
         }
+
+        private void RateProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

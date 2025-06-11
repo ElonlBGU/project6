@@ -39,7 +39,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.labelCustomerId = new System.Windows.Forms.Label();
             this.textBoxCustomerId = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
@@ -58,7 +57,7 @@
             this.labelCustomerId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCustomerId.Location = new System.Drawing.Point(60, 40);
             this.labelCustomerId.Name = "labelCustomerId";
-            this.labelCustomerId.Size = new System.Drawing.Size(128, 28);
+            this.labelCustomerId.Size = new System.Drawing.Size(134, 28);
             this.labelCustomerId.TabIndex = 0;
             this.labelCustomerId.Text = "Customer ID:";
             // 
@@ -79,7 +78,6 @@
             this.buttonSearch.TabIndex = 2;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
-           // this.buttonSearch.Click += new System.EventHandler(this.ButtonSearch_Click);
             // 
             // labelCustomerName
             // 
@@ -87,7 +85,7 @@
             this.labelCustomerName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic);
             this.labelCustomerName.Location = new System.Drawing.Point(60, 90);
             this.labelCustomerName.Name = "labelCustomerName";
-            this.labelCustomerName.Size = new System.Drawing.Size(153, 25);
+            this.labelCustomerName.Size = new System.Drawing.Size(149, 25);
             this.labelCustomerName.TabIndex = 3;
             this.labelCustomerName.Text = "Customer Name:";
             // 
@@ -97,7 +95,7 @@
             this.labelProductList.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelProductList.Location = new System.Drawing.Point(60, 140);
             this.labelProductList.Name = "labelProductList";
-            this.labelProductList.Size = new System.Drawing.Size(120, 25);
+            this.labelProductList.Size = new System.Drawing.Size(124, 25);
             this.labelProductList.TabIndex = 4;
             this.labelProductList.Text = "Product List:";
             // 
@@ -110,7 +108,6 @@
             this.comboBoxProducts.Name = "comboBoxProducts";
             this.comboBoxProducts.Size = new System.Drawing.Size(240, 33);
             this.comboBoxProducts.TabIndex = 5;
-           // this.comboBoxProducts.SelectedIndexChanged += new System.EventHandler(this.ComboBoxProducts_SelectedIndexChanged);
             // 
             // labelRating
             // 
@@ -118,7 +115,7 @@
             this.labelRating.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelRating.Location = new System.Drawing.Point(60, 190);
             this.labelRating.Name = "labelRating";
-            this.labelRating.Size = new System.Drawing.Size(74, 25);
+            this.labelRating.Size = new System.Drawing.Size(75, 25);
             this.labelRating.TabIndex = 6;
             this.labelRating.Text = "Rating:";
             // 
@@ -141,7 +138,6 @@
             this.buttonSubmitRating.TabIndex = 8;
             this.buttonSubmitRating.Text = "Submit Rating";
             this.buttonSubmitRating.UseVisualStyleBackColor = true;
-           // this.buttonSubmitRating.Click += new System.EventHandler(this.ButtonSubmitRating_Click);
             // 
             // labelMessage
             // 
@@ -173,8 +169,10 @@
             this.Name = "RateProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rate Purchased Product";
+            this.Load += new System.EventHandler(this.RateProductForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
